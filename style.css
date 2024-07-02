@@ -2,3 +2,7 @@ body{
     background-color: ghostwhite;
     color: black;
 }
+#login-form{
+    display: block;
+    border-color: black;
+}
