@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>APP Check In</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="manifest" href="manifest.json">
+</head>
+
+<body>
+    <h1>APP CheckIn</h1>
+    <form id="login-form">
+        <fieldset>
+            <input type="text" id="user-input" placeholder="login" required>
+            <input type="password" id="password-input" placeholder="senha" required>
+            <button type="submit">Logar</button>
+        </fieldset>
+    </form>
+    <script>
+        if('serviceWorker' in navigator) {
+            navigator.serviceWorker.register('/serviceWorker.js')
+            .then(registration =>
+            {console.log('Serviço Iniciado - Service Start', registration.scope);})
+            .catch(error => {console.log('Falha na Inicialização do serviço'),error});}
+    </script>
+
+</body>
+
+</html>
