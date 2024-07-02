@@ -22,7 +22,8 @@
         if('serviceWorker' in navigator) {
             navigator.serviceWorker.register('/serviceWorker.js')
             .then(registration =>
-            {console.log('Serviço Iniciado - Service Start', registration.scope);})
+            {console.log('Serviço Iniciado - Service Start', 
+            registration.scope);})
             .catch(error => {console.log('Falha na Inicialização do serviço'),error});}
     </script>
 
