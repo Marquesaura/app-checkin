@@ -5,12 +5,27 @@
 }
 
 body {
-    background-color: ghostwhite;
+    background-color: beige;
     color: black;
+    justify-content: center;
 }
 
-#login-form {
+#login-form { 
     display: inline-block;
     border-color: black;
-    background-color: bisque;
+    background-color: darkgray;
+    font-size: 26px;
+    align-items: center;
+}
+input{
+    margin: 5px;
+    border-radius: 15px;
+    padding: 10px;
+    font-size: 15px;
+}
+button{
+    background-color: red;
+    border-radius: 5px;
+    font-size: 20px;
+    align-items: center;
 }
